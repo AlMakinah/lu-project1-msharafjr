@@ -1,0 +1,20 @@
+header.header
+	.container
+		.header__inner
+			.row.row--2
+				.col
+					ul.list.list--inline.header__list
+						li: form.header__search-form
+							label.visually-hidden(for='search') search
+							input(type='text', id='search')
+						li
+							nav.header__nav
+								ul.list.list--inline
+									li: a(href='javascript:') dribbles
+									li: a(href='javascript:') buckets
+									li: a(href='javascript:') users
+									li: a(href='javascript:') lists
+				.col
+					ul.list.list--inline.header__user-area
+						li: a(href='javascript:') sign up
+						li: a(href='javascript:') sign in

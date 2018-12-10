@@ -1,0 +1,9 @@
+main.dribbles
+	.container
+		h1.dribble__title Dribbles
+		ul.list.row.row--4
+			- for ( var i = 0; i < 12; i++ )
+				include _dribble
+		.redirect-unauth.align-center
+			p.redirect-unauth__signup: a(href='/signup') Sign up to continue
+			p.redirect-unauth__signin: a(href='/login') or sing in

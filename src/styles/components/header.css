@@ -1,0 +1,24 @@
+.header {
+	height: 50px;
+	background: var(--grey-color);
+	text-transform: capitalize;
+	.header__inner {
+		padding: 0 30px;
+		line-height: 50px;
+		.header__user-area {
+			text-align: end;
+		}
+	}
+	.header__search-form input {
+		background: var(--darkgrey-color);
+		padding: 5px 10px;
+		border: 1px solid var(--darkgrey-color);
+	}
+	a {
+		padding: 16px;
+		color: #b9b9b9;
+		&:hover {
+			color: var(--white-color);
+		}
+	}
+}

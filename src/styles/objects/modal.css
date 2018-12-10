@@ -1,0 +1,84 @@
+.lity-wrap {
+	overflow: auto;
+}
+.lity-container {
+    width: 50%;
+}
+.modal {
+	max-height: none;
+	margin: 20px;
+    background: #ececec;
+    border-radius: 10px;
+	.dribble__actions {
+		text-align: end;
+		margin-top: 10px;
+	}
+	.dribble__actions--btn {
+		margin-left: 10px;
+		img {
+			width: 18px;
+			float: left;
+			margin-right: 4px;
+		}
+	}
+    .modal__header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 6rem;
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .about {
+            display: grid;
+            grid-template-columns: 0.25fr 2fr;
+            padding: 10px 0;
+            .author-img {
+                float: left;
+                img {
+                    width: 45px;
+					height: 45px;
+					border-radius: 50%;
+                }
+            }
+            .info {
+                h2 {
+                    margin: 0;
+                }
+                p {
+                    margin: 0;
+                    a {
+                        color: #3a8bbb;
+                    }
+                    time {
+                        color: #a2a2a2;
+                    }
+                }
+            }
+        }
+    }
+    .modal__img {
+		width: 100%;
+		background: #ffffff;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		img {
+        	width: 80%;
+			margin: 0 auto;
+			display: block;
+		}
+    }
+    .modal__info {
+		padding: 20px 0;
+		.col + .col {
+			text-align: end;
+		}
+		.dribble__actions--btn {
+			margin-inline-end: 20px;
+		}
+		.dribble__actions {
+			display: flex;
+			flex-flow: column;
+		}
+    }
+}

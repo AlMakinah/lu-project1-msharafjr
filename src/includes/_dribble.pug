@@ -1,0 +1,69 @@
+- const random_screenshot = 'images/' + [ '1','2', '3', '4'][ Math.floor( Math.random() * 4 ) ];
+- const randomId = 's'+ ( Math.random() * 12345 ).toFixed();
+li.col.dribble
+	//- lity sucks
+	.lity-hide.modal(id= randomId)
+		header.modal__header
+			.container
+				.about
+					.author-img
+						img(src="images/avatar.png", alt="avatar")
+					.info
+						h2 Pay Junction - Paper Receipts
+						p by <a href='javascript:'>Eddie Lobanivsky</a> on <span><time datetime='2018-08-20'>August 20, 2018</time></span>
+				ul.list.list--inline.dribble__actions
+					button.btn.dribble__actions--btn save
+					button.btn.dribble__actions--btn
+						img(alt='likes', src='images/like.png')
+						span like
+		.modal__img
+			picture
+				source(srcset=random_screenshot + '.webp' type='image/webp' )
+				img(src=random_screenshot + '.png' alt='screenshot' )
+		.modal__info
+			.row.row--3
+				.col.col--2
+					.dribble__conversation
+						blockquote We have a spiffy new contact form on our website, making it more fun and easier than ever to get in touch about a project.
+				.col
+					button.btn.dribble__actions--btn
+						span Copy Link
+					ul.list.dribble__actions
+						li.dribble__views
+							a( href='javascript:' )
+								img( alt='views', src='images/eye.png' )
+								span.dribble__action-count 4234
+						li.dribble__comments
+							a( href='javascript:' )
+								img( alt='comments', src='images/comment.png' )
+								span.dribble__action-count 23
+						li.dribble__likes
+							a( href='javascript:' )
+								img( alt='likes', src='images/like.png' )
+								span.dribble__action-count 132
+				
+	.card
+		.card__img
+			a(href='#'+ randomId data-lity): .card__layer
+				p: strong Lorem ipsum dolor
+				span Føle – Norwegian for 'feel'. Today I'm sharing some initial look and feel exploration for this minimal lifestyle brand. The idea is built around ...
+			picture
+				source(srcset=random_screenshot + '.webp' type='image/webp' )
+				img(src=random_screenshot + '.png' alt='screenshot' )
+		ul.list.list--inline.dribble__actions
+			li.dribble__views
+				a( href='javascript:' )
+					img( alt='views', src='images/eye.png' )
+					span.dribble__action-count 4234
+			li.dribble__comments
+				a( href='javascript:' )
+					img( alt='comments', src='images/comment.png' )
+					span.dribble__action-count 23
+			li.dribble__likes
+				a( href='javascript:' )
+					img( alt='likes', src='images/like.png' )
+					span.dribble__action-count 132
+	a( href='javascript:' ).dribble__author
+		img( src='images/avatar.png' alt='someone' )
+		span Someone
+			
